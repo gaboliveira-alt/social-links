@@ -9,78 +9,71 @@ import {
   Mail,
   User,
 } from "lucide-react";
-
 import { Button } from "./Button";
 
-
 export const SidebarLeft = () => {
-    return (
-        <div className="flex h-full flex-col justify-between">
-            <div className="space-y-14">
-                <div className="space-y-1">
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <House className="text-text size-5.25"></House>
-                        <span className="text-text font-semibold">Home</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <Hash className="text-text size-5.25"></Hash>
-                        <span className="text-text font-semibold">Explore</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <div className="relative">
-                            <Bell className="text-text font-semibold"></Bell>
-                            <div className="bg-blue absolute -top-1.5 -right-1 flex size-3.75 items-center justify-center rounded-full text-[11px] text-white">
-                                1
-                            </div>
-                        </div>
-                        <span className="text-text font-semibold">Notifications</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <Mail className="text-text size-5.25"></Mail>
-                        <span className="text-text font-semibold">Messages</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <Bookmark className="text-text size-5.25"></Bookmark>
-                        <span className="text-text font-semibold">Bookmarks</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <List className="text-text size-5.25"></List>
-                        <span className="text-text font-semibold">Lists</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <User className="text-text size-5.25"></User>
-                        <span className="text-text font-semibold">Profile</span>
-                    </div>
-
-                    <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
-                        <CircleEllipsis className="text-text size-5.25"></CircleEllipsis>
-                        <span className="text-text font-semibold">More</span>
-                    </div>
-                </div>
-
-                <Button>Tweet</Button>
+  return (
+    <div className="flex h-full flex-col justify-between">
+      <div className="space-y-14">
+        <div className="space-y-1">
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 brightness-150 transition-all hover:brightness-125">
+            <House className="text-text size-5.25" />
+            <span className="text-text font-semibold">Home</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <Hash className="text-text size-5.25" />
+            <span className="text-text font-semibold">Explore</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <div className="relative">
+              <Bell className="text-text size-5.25" />
+              <div className="bg-blue absolute -top-1.5 -right-1 flex size-3.75 items-center justify-center rounded-full text-[11px] text-white">
+                1
+              </div>
             </div>
-
-            <div className="flex items-center gap-4 pr-4">
-                <img src="https://www.reddit.com/r/PERSoNA/comments/fh91z0/daily_character_discussion_day_100_yu_narukami/?tl=pt-br"
-                className="size-10 rounded-full" 
-                alt="Foto do usuario" />
-
-                <div className="flex-1 space-y-0.5">
-                    <div className="text-text text-[15px] font-bold">Yu Narukami</div>
-                    <div className="text-text text-[13px] font-bold">@yu</div>
-                </div>
-
-                <div className="ml-5">
-                    <Ellipsis className="text-text size-5"></Ellipsis>
-                </div>
-            </div>
+            <span className="text-text font-semibold">Notifications</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <Mail className="text-text size-5.25" />
+            <span className="text-text font-semibold">Message</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <Bookmark className="text-text size-5.25" />
+            <span className="text-text font-semibold">Bookmarks</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <List className="text-text size-5.25" />
+            <span className="text-text font-semibold">Lists</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <User className="text-text size-5.25" />
+            <span className="text-text font-semibold">Profile</span>
+          </div>
+          <div className="hover:bg-hover/40 flex cursor-pointer items-center gap-3 rounded-sm px-3 py-3 transition-all hover:brightness-125">
+            <CircleEllipsis className="text-text size-5.25" />
+            <span className="text-text font-semibold">More</span>
+          </div>
         </div>
-    )
-}
+
+        <Button>Tweet</Button>
+      </div>
+
+      <div className="flex items-center gap-4 pr-4">
+        <img
+          src="https://thispersondoesnotexist.com/"
+          className="size-10 rounded-full"
+          alt="Nome do Usuário"
+        />
+
+        <div className="flex-1 -space-y-0.5">
+          <div className="text-text text-[15px] font-bold">João da Silva</div>
+          <div className="text-text text-[13px] font-bold">@joao</div>
+        </div>
+
+        <div className="ml-5">
+          <Ellipsis className="text-text size-5" />
+        </div>
+      </div>
+    </div>
+  );
+};
